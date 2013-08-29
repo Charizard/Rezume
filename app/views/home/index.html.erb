@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <div class="logout">
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "blue-btn") %>
+  </div>
+<% else %>
+  <div class="facebook-login">
+    <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "blue-btn fb-login" %>
+  </div>  
+<% end %>

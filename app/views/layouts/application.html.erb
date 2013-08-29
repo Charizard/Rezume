@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rezume</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="row-fluid main-banner">
+    <div class="main-logo">
+      <h1>Rezume</h1>
+    </div>
+    <div class="tag-line">
+      <h4>Join us and mould your resume on the go!!!</h4>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+</body>
+</html>

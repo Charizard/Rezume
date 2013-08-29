@@ -1,0 +1,74 @@
+@font-face
+  font-family: 'Museo Slab'
+  src: url('/assets/MuseoSlab-500.otf') format('opentype')
+
+@font-face
+  font-family: 'Roboto'
+  src: url('/assets/Roboto.ttf') format('truetype')
+
+@font-face
+  font-family: 'Open Sans'
+  src: url('/assets/OpenSans-Regular.ttf') format('truetype')
+
+
+body
+  padding: 0px
+  background-image: url('../assets/rezume-bg.png')
+.main-banner
+  margin: 100px 0px 50px 0px
+  text-align: center
+  height: 100%
+  width: 100%
+  .main-logo
+    font-size: 50px !important
+    text-shadow: 1px 0px 1px #545454
+    font-family: 'Museo Slab' !important
+    color: #323232
+    height: auto
+    position: relative
+    &:before
+      height: 2px
+      content: ""
+      background-color: #3b5998
+      width: 30%
+      top: 50%
+      left: 12%
+      position: absolute
+    &:after
+      height: 2px
+      content: ""
+      background-color: #3b5998 
+      width: 30%
+      top: 50%
+      left: 58% 
+      position: absolute
+  .tag-line
+    font-family: 'Open Sans' !important
+    color: #535353
+
+.blue-btn
+  text-align: center
+  font-family: "Open Sans"
+  font-size: 30px
+  font-weight: 400
+  width: auto
+  padding: 10px
+  background-color: #3b5998  
+  color: #d4d4d4
+  box-shadow: 0px 0px 20px #535353
+  &:hover
+    text-decoration: none
+    color: #ffffff
+
+.container-fluid
+  .logout
+    width: 118px
+    height: auto
+    position: relative
+    margin: 0 auto
+  .facebook-login
+    width: 322px
+    height: auto
+    position: relative
+    margin: 0 auto
+
