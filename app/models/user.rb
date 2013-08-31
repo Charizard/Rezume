@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   
   validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i }
-  validates :name, :uid
+  validates :name, :uid, :presence => true
   
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     #debugger
