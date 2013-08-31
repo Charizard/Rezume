@@ -13,3 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore swap files
+*.swp
+
+# Ignore database.yml
+/config/database.yml

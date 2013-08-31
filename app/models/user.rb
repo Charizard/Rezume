@@ -9,7 +9,9 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :name  
   # attr_accessible :title, :body
-  attr_accessor :fb_hash
+  
+  validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i }
+  validates :name, :uid
   
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     #debugger
